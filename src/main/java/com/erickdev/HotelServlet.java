@@ -42,6 +42,6 @@ public class HotelServlet extends HttpServlet {
         log.debug("Servlet service...");
         String[] hotels = {"RIU","Riande","Trump"};
         request.setAttribute("hotels", hotels); // Esto estará disponible como ${hotels}   
-        request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+        request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }
