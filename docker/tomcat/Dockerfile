@@ -1,7 +1,6 @@
 FROM tomcat:latest
 
-ADD tomcat-users.xml /usr/local/tomcat/conf/
-
-RUN rm -rf /usr/local/tomcat/webapps/ROOT
+ADD docker/tomcat/tomcat-users.xml /usr/local/tomcat/conf/
+ADD target/ROOT.war /usr/local/tomcat/webapps/
 
 CMD ["catalina.sh", "run"]

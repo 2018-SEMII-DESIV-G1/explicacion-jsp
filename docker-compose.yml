@@ -10,7 +10,9 @@ services:
         ports:
           - "80:80"
     tomcat:
-        build: ./docker/tomcat
+        build: 
+          context: .
+          dockerfile: ./docker/tomcat/Dockerfile
         container_name: tomcat-container
         expose:
           - "8009"
