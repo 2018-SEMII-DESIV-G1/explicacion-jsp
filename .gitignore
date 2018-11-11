@@ -24,3 +24,6 @@ hs_err_pid*
 
 # Mac
 .DS_Store
+
+# Compiled Version of JSP files
+target/
