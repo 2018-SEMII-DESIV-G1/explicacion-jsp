@@ -1,0 +1,19 @@
+version: '3'
+    
+services:
+    httpd:
+        build: ./docker/httpd
+        container_name: httpd-container
+        dns:
+          - 8.8.8.8
+          - 9.9.9.9
+        ports:
+          - "80:80"
+    tomcat:
+        build: ./docker/tomcat
+        container_name: tomcat-container
+        expose:
+          - "8009"
+        volumes:
+          - ./target/ROOT.war:/usr/local/tomcat/webapps/ROOT.war
+        
