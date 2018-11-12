@@ -1,4 +1,4 @@
-# jsp_tomcat
+# explicacion-jsp
 
 ## Descripción
 Proyecto base para utilizar `JSP` con `TOMCAT` como app server y `HTTPD` como proxy. Toda la infraestructura esta sobre `docker` y la orquestración esta sobre `docker-compose`.
