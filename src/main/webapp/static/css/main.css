@@ -1,0 +1,19 @@
+.minesweeper-container{
+    display: flex;
+}
+
+.empty-block{
+    background-color: aqua;
+    height: 2rem;
+    padding-top: 4px;
+    text-align: center;
+    width: 2rem;    
+}
+
+.bomb-block{
+    background-color: darkgrey;
+    height: 2rem;
+    padding-top: 4px;
+    text-align: center;
+    width: 2rem;    
+}
