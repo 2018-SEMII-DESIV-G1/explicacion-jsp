@@ -27,3 +27,6 @@ hs_err_pid*
 
 # Compiled Version of JSP files
 target/
+
+# Vagrant
+.vagrant/

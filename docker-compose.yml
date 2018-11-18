@@ -9,7 +9,7 @@ services:
           - 8.8.8.8
           - 9.9.9.9
         ports:
-          - "80:80"
+          - "8000:80"
     tomcat:
         build: 
           context: .
