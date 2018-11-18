@@ -1,4 +1,5 @@
 #!/bin/bash
+
 set -x 
 
 function fix_previous_installs(){

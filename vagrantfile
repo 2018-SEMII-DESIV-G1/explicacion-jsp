@@ -2,8 +2,7 @@
 # vi: set ft=ruby :
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
-  config.vm.network :forwarded_port, host: 8000, guest: 80
-  config.vm.network :forwarded_port, host: 80, guest: 8009
+  config.vm.network :forwarded_port, host: 80, guest: 80
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
     vb.cpus = 1
